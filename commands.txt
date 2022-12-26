@@ -1,2 +1,0 @@
-ng serve --port 4401 // run angular app on port 4401
-ng g c post // creates a component post and related files to it.
