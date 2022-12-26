@@ -1,0 +1,1 @@
+$ ng serve --port 4401 // run angular app on port 4401
