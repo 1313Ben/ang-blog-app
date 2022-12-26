@@ -3,5 +3,5 @@ ng g c post // creates a component post and related files to it.
 
 Sharing data between components:
 1. Parent to child component via @Input decorator
-2. Child to parent component via @Output decorator
+2. Child to parent component via @Output decorator or via @ViewChild decorator
 3. Child to Parent when there is Event, using the @Output decorator and event Emitter
