@@ -9,3 +9,6 @@ Sharing data between components:
 Sharing data using @Output & Event Emitter:
 This approach is ideal when we want to share data changes thatt occur on things like button clicks,
 form entries, and other user events.
+
+HTML DOM Style Object
+https://www.w3schools.com/jsref/dom_obj_style.asp

@@ -6,5 +6,8 @@
 <br><br>
 <img [src]="imgUrl" alt="">
 <hr>
-<h3>Class-Binding</h3>
+<h3>CSS Class-Binding</h3>
 <p [class.text-red]="boolRed">This Text is red</p>
+<hr>
+<h3>CSS Style-Binding</h3>
+<h4 [style.color] = "boolRed? 'red' : 'blue'">Style binding</h4>
