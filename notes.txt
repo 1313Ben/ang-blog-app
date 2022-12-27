@@ -12,3 +12,14 @@ form entries, and other user events.
 
 HTML DOM Style Object
 https://www.w3schools.com/jsref/dom_obj_style.asp
+
+One-Way data binding:
+compontent to view (HTML) // can only bind data component to view // uni directional
+# String interpolation - {{title}}
+# Property binding - [src]
+# Class binding - [class.text-red]
+# Style binding - [style.backgroundColor]
+
+Two-Way data binding:
+component to view / view to component // bi-directional
+# two-way binding - [(ngModel)]

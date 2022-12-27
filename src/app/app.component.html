@@ -20,3 +20,10 @@
 <hr>
 <h3>Template variable</h3>
 <input type="text" (keyup.enter) = "onKeyupTwo(input.value)" #input>
+<hr>
+
+<h3>One way vs two way data binding</h3>
+<input type="text" [value] = "textValue" >
+<br>
+<br>
+<input type="text" [(ngModel)]="textValue" (keyup.enter) = "onKeyupTwoWay()">

@@ -12,7 +12,11 @@ export class AppComponent{
 
   boolRed: boolean = false
 
-  buttonClick() {
+  twoWayBind!: string
+
+  textValue: string = "Value is coming from component"
+
+  buttonClick(): void {
     console.log("button clicked")
   }
   onKeyup() {
@@ -22,5 +26,9 @@ export class AppComponent{
 
   onKeyupTwo(input: any) {
     console.log(input)
+  }
+
+  onKeyupTwoWay() {
+    //console.log(this.twoWayBind)
   }
 }
