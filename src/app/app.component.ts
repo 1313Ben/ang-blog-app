@@ -9,4 +9,6 @@ import { PostComponent } from './post/post.component';
 export class AppComponent{
 
   imgUrl: string = "https://cdn-icons-png.flaticon.com/512/4392/4392554.png"
+
+  boolRed: boolean = true
 }
