@@ -18,6 +18,9 @@ export class AppComponent{
   onKeyup() {
     // console.log($event.key)
     console.log("Enter key pressed")
+  }
 
+  onKeyupTwo(input: any) {
+    console.log(input)
   }
 }
