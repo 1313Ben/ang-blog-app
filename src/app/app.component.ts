@@ -15,4 +15,9 @@ export class AppComponent{
   buttonClick() {
     console.log("button clicked")
   }
+  onKeyup() {
+    // console.log($event.key)
+    console.log("Enter key pressed")
+
+  }
 }
