@@ -1,29 +1,20 @@
-<h1>Angular Intro</h1>
-<h2>Data Binding & Events</h2>
-<hr>
-<h3>Property-Binding</h3>
-<img src="{{imgUrl}}" alt="">
-<br><br>
-<img [src]="imgUrl" alt="">
-<hr>
-<h3>CSS Class-Binding</h3>
-<p [class.text-red]="boolRed">This Text is red</p>
-<hr>
-<h3>CSS Style-Binding</h3>
-<h4 [style.color] = "boolRed? 'red' : 'blue'">Style binding</h4>
-<hr>
-<h3>Event binding</h3>
-<button (click)="buttonClick()">Click Me</button>
-<hr>
-<h3>Event filtering</h3>
-<input type="text" (keyup.enter) = "onKeyup()">
-<hr>
-<h3>Template variable</h3>
-<input type="text" (keyup.enter) = "onKeyupTwo(input.value)" #input>
-<hr>
+<div class="form-area">
+  <h1>Post Form</h1>
+  <br><br>
+  <input type="text" placeholder="Post Title" [(ngModel)] = "postTitle">
+  <br><br>
+  <textarea name="" id="" cols="30" rows="10" placeholder="Post Detail" [(ngModel)] = "postDetails"></textarea>
+  <br><br>
+  <input type="text" placeholder="Post Image URL" [(ngModel)] = "imageURL">
+  <br><br>
+  <input type="text" placeholder="Post URL" [(ngModel)] = "postURL">
+  <br><br>
+  <input type="checkbox" [(ngModel)] = "addBackground"> Add Backgorund
+</div>
 
-<h3>One way vs two way data binding</h3>
-<input type="text" [value] = "textValue" >
-<br>
-<br>
-<input type="text" [(ngModel)]="textValue" (keyup.enter) = "onKeyupTwoWay()">
+<div class="preview-area">
+  <img [src]="imageURL" alt="">
+  <h1> <span [class.add-background] = "addBackground">{{postTitle}}</span></h1>
+  <p>{{postDetails}}</p>
+  <a [href]="postURL" target="_blank" [style.display] = "postURL ? 'block' : 'none' ">More Details</a>
+</div>
