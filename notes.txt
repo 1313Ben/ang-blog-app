@@ -35,3 +35,4 @@ Structural directive (which can change the Dom layout by adding and removing DOM
 Atttribute directive (which can change the appearance or behaviour of an element, component, or another directive)
 Custom directive (which can create our own custom directive from scratch)
 
+NgFor: use it to render an array inside the view

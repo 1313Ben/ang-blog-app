@@ -1,20 +1,14 @@
-<div class="form-area">
-  <h1>Post Form</h1>
-  <br><br>
-  <input type="text" placeholder="Post Title" [(ngModel)] = "postTitle">
-  <br><br>
-  <textarea name="" id="" cols="30" rows="10" placeholder="Post Detail" [(ngModel)] = "postDetails"></textarea>
-  <br><br>
-  <input type="text" placeholder="Post Image URL" [(ngModel)] = "imageURL">
-  <br><br>
-  <input type="text" placeholder="Post URL" [(ngModel)] = "postURL">
-  <br><br>
-  <input type="checkbox" [(ngModel)] = "addBackground"> Add Backgorund
-</div>
-
-<div class="preview-area">
-  <img [src]="imageURL" alt="">
-  <h1> <span [class.add-background] = "addBackground">{{postTitle}}</span></h1>
-  <p>{{postDetails}}</p>
-  <a [href]="postURL" target="_blank" [style.display] = "postURL ? 'block' : 'none' ">More Details</a>
-</div>
+<p>{{ postArray }}</p>
+<hr />
+<h2>ngFor examples</h2>
+<h3>Fetching an Array</h3>
+<ul>
+  <li *ngFor="let post of postArray">{{ post }}</li>
+</ul>
+<h3>Fetching an Object Array</h3>
+<ul>
+  <li *ngFor="let post of objArray; let i = index">
+    {{ post.postTitle }} <button (click)="onDelete(i)">Delete</button>
+  </li>
+</ul>
+<button (click)="addNew()">Add New Data</button>

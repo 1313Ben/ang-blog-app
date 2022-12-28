@@ -8,9 +8,21 @@ import { PostComponent } from './post/post.component';
 })
 export class AppComponent{
 
-  postTitle!: string;
-  postDetails!: string;
-  imageURL!: string;
-  postURL!: string;
-  addBackground!: boolean;
+  postArray: Array<string> = ['post1', 'post2', 'post3', 'post4', 'post5']
+  
+  objArray: Array<any> = [
+    { id: 1, postTitle: 'Post1' },
+    { id: 2, postTitle: 'Post2' },
+    { id: 3, postTitle: 'Post3' },
+    { id: 4, postTitle: 'Post4' },
+    { id: 5, postTitle: 'Post5' }
+  ]
+
+  addNew() {
+    this.objArray.push({id:6, postTitle: 'Post6'})
+  }
+
+  onDelete(i: any) {
+    this.objArray.splice(i, 1);
+  }
 }
