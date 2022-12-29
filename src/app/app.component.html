@@ -6,15 +6,15 @@
   <li *ngFor="let post of postArray">{{ post }}</li>
 </ul>
 <h3>Fetching an Object Array</h3>
-<div *ngIf="objArray.length > 0">
+<div *ngIf="objArray.length > 0; else noData">
   <ul>
     <li *ngFor="let post of objArray; let i = index">
       {{ post.postTitle }} <button (click)="onDelete(i)">Delete</button>
     </li>
   </ul>
-  <button (click)="addNew()">Add New Data</button>
 </div>
+<button (click)="addNew()">Add New Data</button>
 
-<div *ngIf="objArray.length == 0">
+<ng-template #noData>
   <p>There is no data to fetch...</p>
-</div>
+</ng-template>
