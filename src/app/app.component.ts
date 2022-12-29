@@ -17,6 +17,8 @@ export class AppComponent{
     { id: 4, postTitle: 'Post4' },
     { id: 5, postTitle: 'Post5' }
   ]
+  
+  // objArray: Array<any> = []
 
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
