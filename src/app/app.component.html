@@ -32,3 +32,14 @@
   <div *ngSwitchDefault>Default</div>
 </div>
 <hr />
+
+<h2>ngStyle directive</h2>
+<button (click)="changeStyle()">Change style</button>
+<h1
+  [ngStyle]="{
+    color: isActive ? 'red' : 'black',
+    textTransform: isActive ? 'uppercase' : 'lowercase'
+  }"
+>
+  Example ngStyle directive
+</h1>

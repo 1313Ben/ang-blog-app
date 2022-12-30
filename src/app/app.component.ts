@@ -22,6 +22,8 @@ export class AppComponent{
 
   stepForm: string = ""
 
+  isActive: boolean = true
+
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
   }
@@ -32,5 +34,9 @@ export class AppComponent{
 
   onClick(step: string) {
     this.stepForm = step
+  }
+
+  changeStyle() {
+    this.isActive = !this.isActive
   }
 }
