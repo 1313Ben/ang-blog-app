@@ -20,11 +20,17 @@ export class AppComponent{
   
   // objArray: Array<any> = []
 
+  stepForm: string = ""
+
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
   }
 
   onDelete(i: any) {
     this.objArray.splice(i, 1);
+  }
+
+  onClick(step: string) {
+    this.stepForm = step
   }
 }
