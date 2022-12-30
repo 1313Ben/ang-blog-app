@@ -22,7 +22,8 @@ export class AppComponent{
 
   stepForm: string = ""
 
-  isActive: boolean = true
+  isActiveNgStyle: boolean = true
+  isActiveNgClass: boolean = true
 
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
@@ -37,6 +38,10 @@ export class AppComponent{
   }
 
   changeStyle() {
-    this.isActive = !this.isActive
+    this.isActiveNgStyle = !this.isActiveNgStyle
+  }
+
+  changeClass() {
+    this.isActiveNgClass = !this.isActiveNgClass
   }
 }

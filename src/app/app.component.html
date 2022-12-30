@@ -37,9 +37,21 @@
 <button (click)="changeStyle()">Change style</button>
 <h1
   [ngStyle]="{
-    color: isActive ? 'red' : 'black',
-    textTransform: isActive ? 'uppercase' : 'lowercase'
+    color: isActiveNgStyle ? 'red' : 'black',
+    textTransform: isActiveNgStyle ? 'uppercase' : 'lowercase'
   }"
 >
   Example ngStyle directive
+</h1>
+<hr />
+
+<h2>ngClass directive</h2>
+<button (click)="changeClass()">Change style</button>
+<h1
+  [ngClass]="{
+    main: isActiveNgClass,
+    'text-weight': isActiveNgClass
+  }"
+>
+  Example ngClass directive
 </h1>
