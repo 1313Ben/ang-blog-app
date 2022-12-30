@@ -6,24 +6,31 @@ import { PostComponent } from './post/post.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements AfterViewInit{
-  title = 'ang-blog-app';
-  parentMessage: string = 'Message coming from parent component'
-  childMessage!: string;
-  fromChildOutput!: string;
+export class AppComponent{
 
-  @ViewChild(PostComponent) childComp: any;
+  postArray: Array<string> = ['post1', 'post2', 'post3', 'post4', 'post5']
+  
+  objArray: Array<any> = [
+    { id: 1, postTitle: 'Post1' },
+    { id: 2, postTitle: 'Post2' },
+    { id: 3, postTitle: 'Post3' },
+    { id: 4, postTitle: 'Post4' },
+    { id: 5, postTitle: 'Post5' }
+  ]
+  
+  // objArray: Array<any> = []
 
-  constructor() {
-   // console.log(this.childComp)
+  stepForm: string = ""
+
+  addNew() {
+    this.objArray.push({id:6, postTitle: 'Post6'})
   }
-  ngAfterViewInit(): void {
-    console.log(this.childComp.childMessage)
-    this.childMessage = this.childComp.childMessage
+
+  onDelete(i: any) {
+    this.objArray.splice(i, 1);
   }
 
-  receiveMessage($event: any) {
-    this.fromChildOutput = $event
-    console.log($event)
+  onClick(step: string) {
+    this.stepForm = step
   }
 }

@@ -9,3 +9,30 @@ Sharing data between components:
 Sharing data using @Output & Event Emitter:
 This approach is ideal when we want to share data changes thatt occur on things like button clicks,
 form entries, and other user events.
+
+HTML DOM Style Object
+https://www.w3schools.com/jsref/dom_obj_style.asp
+
+One-Way data binding:
+compontent to view (HTML) // can only bind data component to view // uni directional
+# String interpolation - {{title}}
+# Property binding - [src]
+# Class binding - [class.text-red]
+# Style binding - [style.backgroundColor]
+
+Two-Way data binding:
+component to view / view to component // bi-directional
+# two-way binding - [(ngModel)]
+
+Directive:
+Directives are components without a view or with a view.
+can manipulate the DOM Object.
+can adding html elements removing html elements from DOM dynamically
+
+Types of directives:
+Component directive (which is with a template view)
+Structural directive (which can change the Dom layout by adding and removing DOM elements)
+Atttribute directive (which can change the appearance or behaviour of an element, component, or another directive)
+Custom directive (which can create our own custom directive from scratch)
+
+NgFor: use it to render an array inside the view
