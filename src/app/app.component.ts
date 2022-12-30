@@ -31,6 +31,12 @@ export class AppComponent{
   isActiveNgStyle: boolean = true
   isActiveNgClass: boolean = true
 
+  name: string = ""
+  email: string = ""
+  address: string = ""
+
+  userArray: Array<any> = []
+
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
   }
@@ -49,5 +55,17 @@ export class AppComponent{
 
   changeClass() {
     this.isActiveNgClass = !this.isActiveNgClass
+  }
+
+  onSave() {
+    this.userArray.push({
+      "name": this.name,
+      "email": this.email,
+      "address": this.address
+    })
+  }
+
+  onDeleteUser(index: any) {
+    this.userArray.splice(index, 1);
   }
 }
