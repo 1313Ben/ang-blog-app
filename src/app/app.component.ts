@@ -8,6 +8,12 @@ import { PostComponent } from './post/post.component';
 })
 export class AppComponent{
 
+  postTitle!: string;
+  postDetails!: string;
+  imageURL!: string;
+  postURL!: string;
+  addBackground!: boolean;
+
   postArray: Array<string> = ['post1', 'post2', 'post3', 'post4', 'post5']
   
   objArray: Array<any> = [
