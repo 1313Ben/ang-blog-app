@@ -37,6 +37,10 @@ export class AppComponent{
 
   userArray: Array<any> = []
 
+  pTitle: string = "Uppercase/Lowercase pipe"
+  pNumber: number = 285645
+  pNumberDec: number = 3.85674
+
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})
   }

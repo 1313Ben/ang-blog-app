@@ -41,3 +41,6 @@ ngFor: use it to render an array inside the view
 
 ngStyle: when defining a ngStyle condition we have to define the else part as well, otherwise we will
 get compile errors.
+
+pipes: are used to transforming data into a particular format
+inbuilt-pipes: uppercase, lowercase, decimal/number, currency, date, json, percent, slice

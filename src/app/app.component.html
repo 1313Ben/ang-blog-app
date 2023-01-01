@@ -141,3 +141,15 @@
 <ng-template #noUserData>
   <h4>No data to show</h4>
 </ng-template>
+
+<hr />
+<h2>Pipes</h2>
+<h3>Uppercase / Lowercase pipe</h3>
+<p>Uppercase: {{ pTitle | uppercase }}</p>
+<p>Lowerrcase: {{ pTitle | lowercase }}</p>
+<h3>Numbers</h3>
+<p>{{ pNumber | number }}</p>
+<p>two dec: {{ pNumberDec | number : "1.2-2" }}</p>
+<p>two dec: {{ pNumberDec | number : "2.2-2" }}</p>
+<p>one dec: {{ pNumberDec | number : "1.1-1" }}</p>
+<p>0 dec: {{ pNumberDec | number : "1.0-0" }}</p>
