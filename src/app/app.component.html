@@ -153,3 +153,26 @@
 <p>two dec: {{ pNumberDec | number : "2.2-2" }}</p>
 <p>one dec: {{ pNumberDec | number : "1.1-1" }}</p>
 <p>0 dec: {{ pNumberDec | number : "1.0-0" }}</p>
+<p>price: {{ pPrice }}</p>
+<p>price: {{ pPrice | currency }}</p>
+<p>price: {{ pPrice | currency : "USD" : false }}</p>
+<p>price: {{ pPrice | currency : "USD" : false : "2.1-1" }}</p>
+<p>price: {{ pPrice | currency : "CHF " }}</p>
+<br />
+<p>Date: {{ pDate }}</p>
+<p>Date: {{ pDate | date : "short" }}</p>
+<p>Date: {{ pDate | date : "shortDate" }}</p>
+<a href="https://angular.io/api/common/DatePipe" target="_blank">
+  DatePipe Angular
+</a>
+<p>Json: {{ pJsonObj }}</p>
+<p>Json: {{ pJsonObj | json }}</p>
+<p>Percentage: {{ 0.567 | percent }}</p>
+<p>Percentage: {{ 5 | percent }}</p>
+<p>Percentage: {{ 0.5 | percent : "1.1-1" }}</p>
+<p>Array: {{ pArray }}</p>
+<p>Arrayslice 0 - 3: {{ pArray | slice : 0 : 3 }}</p>
+<p>Arrayslice 2 - 4: {{ pArray | slice : 2 : 4 }}</p>
+<p><strong>Custom Pipes</strong></p>
+<p>{{ pUserDetails.city }}</p>
+<p>{{ pUserDetails.city | append }}</p>

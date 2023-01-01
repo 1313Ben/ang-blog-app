@@ -1,3 +1,4 @@
+import { AppendPipe } from './pipes/append.pipe';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -13,7 +14,8 @@ import { PostListComponent } from './post-list/post-list.component';
     AppComponent,
     NavbarComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    AppendPipe
   ],
   imports: [
     BrowserModule,

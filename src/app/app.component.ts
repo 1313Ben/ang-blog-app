@@ -40,6 +40,23 @@ export class AppComponent{
   pTitle: string = "Uppercase/Lowercase pipe"
   pNumber: number = 285645
   pNumberDec: number = 3.85674
+  pPrice: number = 99.99
+  pDate: Date = new Date();
+  pJsonObj: object = {
+    id: 1,
+    title: "Post one"
+  }
+  pArray: Array<string> = [
+    "post1", "post2",
+    "post3", "post4",
+    "post5", "post6",
+    "post7", "post8"
+  ]
+  pUserDetails = {
+    name: "User 1",
+    city: "Newyork",
+    countryCode: "US"
+  }
 
   addNew() {
     this.objArray.push({id:6, postTitle: 'Post6'})

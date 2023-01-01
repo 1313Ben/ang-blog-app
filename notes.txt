@@ -44,3 +44,6 @@ get compile errors.
 
 pipes: are used to transforming data into a particular format
 inbuilt-pipes: uppercase, lowercase, decimal/number, currency, date, json, percent, slice
+
+generating a custom pipe via cli:
+ng g pipe pipes/append
